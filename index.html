@@ -1,0 +1,116 @@
+<html>
+  <!-- html boilerplate -->
+  <head>
+    <link rel="stylesheet" href="./App.css" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <!-- <script src="./App.js"></script> -->
+  </head>
+  <body>
+    <div class="App light">
+      <nav class="nav-style light navbar navbar-expand-md navbar-light">
+        <div
+          class="container-width container-height container-justify container"
+        >
+          <a href="/" class="navbar-brand"
+            ><div class="lego-housing">
+              <img
+                class="logo"
+                src="./assets/icons/lego.svg"
+                alt="Logo"
+              /></div></a
+          ><span onclick="downloadSVG()" class="navbar-text">
+            <div class="hor-spacer"></div>
+            <div class="social-icon">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="reload-img"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M376 160H272v153.37l52.69-52.68a16 16 0 0122.62 22.62l-80 80a16 16 0 01-22.62 0l-80-80a16 16 0 0122.62-22.62L240 313.37V160H136a56.06 56.06 0 00-56 56v208a56.06 56.06 0 0056 56h240a56.06 56.06 0 0056-56V216a56.06 56.06 0 00-56-56zM272 48a16 16 0 00-32 0v112h32z"
+                ></path>
+              </svg>
+              <span>Download.</span>
+            </div></span>
+        </div>
+      </nav>
+      <section class="banner banner-light" id="home">
+        <div class="spacer"></div>
+        <div class="container">
+          <div class="aligh-items-center row">
+            <div
+              class="col-xl-7 col-md-6 col-12 banner-inner"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              "
+            >
+              <div>
+                <div>
+                  <!-- <span class="tagline light"
+                    ><span
+                      class="txt-rotate"
+                      data-period="1000"
+                      data-rotate='[  "MERN...", "PERN...", "PHART..."]'
+                      ><span class="wrap">Choos</span></span
+                    ></span
+                  > -->
+                  <h1>Generate your own Minifigure</h1>
+                  <p>
+                    Looking for a way to spice up your website? You have a need
+                    for random svgs? Or maybe you just want to make a
+                    minifigure?
+                  </p>
+                  <p>Hit the API at <strong>legominifigs.com/api</strong>...</p>
+                  <p>Feeling Lucky? Hit the button to get a random minifigure.</p>
+                  <a onclick="updateElement()" class="button light nav-link"
+                    >Randomize
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                      ></path></svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-md-6 col-12">
+              <p class="ASS"></p>
+              <div class="superman">
+                <img
+                  src="http://localhost:4000/api"
+                  class="floating-image"
+                  alt="Lego superman"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer footer-light">
+          <div class="align-items-center row footer-row">
+            <div size="12" class="col-sm-6">
+              <img
+                class="logo"
+                src="./assets/icons/lego-white.svg"
+                alt="Logo"
+              />
+            </div>
+            <p class="copyright">Copyright 2022. All Rights Reserved</p>
+          </div>
+      </footer>
+    </div>
+    <script src="App.js"></script>
+  </body>
+</html>
