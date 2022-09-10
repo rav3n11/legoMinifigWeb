@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="./App.css" />
     <link rel="stylesheet" href="./bootstrap.min.css" />
     <!-- <script src="./App.js"></script> -->
+    <title>Minifig</title>
+    <link rel="icon" href="./assets/icons/lego.svg" type="image/x-icon" />
   </head>
   <body>
     <div class="App light">
@@ -36,7 +38,8 @@
                 ></path>
               </svg>
               <span>Download.</span>
-            </div></span>
+            </div></span
+          >
         </div>
       </nav>
       <section class="banner banner-light" id="home">
@@ -68,7 +71,9 @@
                     minifigure?
                   </p>
                   <p>Hit the API at <strong>legominifigs.com/api</strong>...</p>
-                  <p>Feeling Lucky? Hit the button to get a random minifigure.</p>
+                  <p>
+                    Feeling Lucky? Hit the button to get a random minifigure.
+                  </p>
                   <a onclick="updateElement()" class="button light nav-link"
                     >Randomize
                     <svg
@@ -89,26 +94,60 @@
               <p class="ASS"></p>
               <div class="superman">
                 <img
-                  src="http://localhost:4000/api"
+                  src="https://generator.berekett.me/api"
                   class="floating-image"
                   alt="Lego superman"
                 />
+                <div class="loading">
+                  <svg
+                    class="loading-svg"
+                    stroke="#000"
+                    fill="#000"
+                    stroke-width="0"
+                    viewBox="0 0 1024 1024"
+                    height="30px"
+                    width="30px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2C251.7 958 197 921 150 874c-47-47-84-101.7-109.8-162.7C13.5 648.2 0 581.1 0 512c0-19.9 16.1-36 36-36s36 16.1 36 36c0 59.4 11.6 117 34.6 171.3 22.2 52.4 53.9 99.5 94.3 139.9 40.4 40.4 87.5 72.2 139.9 94.3C395 940.4 452.6 952 512 952c59.4 0 117-11.6 171.3-34.6 52.4-22.2 99.5-53.9 139.9-94.3 40.4-40.4 72.2-87.5 94.3-139.9C940.4 629 952 571.4 952 512c0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.2C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3s-13.5 136.2-40.2 199.3C958 772.3 921 827 874 874c-47 47-101.8 83.9-162.7 109.7-63.1 26.8-130.2 40.3-199.3 40.3z"
+                    ></path>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <footer class="footer footer-light">
-          <div class="align-items-center row footer-row">
-            <div size="12" class="col-sm-6">
-              <img
-                class="logo"
-                src="./assets/icons/lego-white.svg"
-                alt="Logo"
-              />
-            </div>
-            <p class="copyright">Copyright 2022. All Rights Reserved</p>
+        <div class="align-items-center row footer-row">
+          <div size="12" class="col-sm-6">
+            <img class="logo" src="./assets/icons/lego-white.svg" alt="Logo" />
           </div>
+          <p class="copyright">
+            Wanna contribuite?
+            <a
+              class="github-link"
+              href="https://github.com/rav3n11/lego-minifig-generator"
+              >It's on github.
+
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="social-img dark"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                ></path>
+              </svg>
+            </a>
+          </p>
+        </div>
       </footer>
     </div>
     <script src="App.js"></script>

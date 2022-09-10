@@ -483,3 +483,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   cursor: pointer;
   color: #40403f;
 }
+.github-link{
+  text-decoration: none;  
+  opacity: 1;
+  color: #fff;
+}
+.github-link:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.loading{
+  height: 60vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.loading-svg{
+  -webkit-animation: load 1s infinite;			
+	-moz-animation: load 1s infinite;
+	-ms-animation: load 1s infinite; 			
+	animation: load 1s infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;		
+	-ms-animation-timing-function: linear;
+	animation-timing-function: linear;
+  transform:rotate(180deg);
+  opacity: 0.5;
+}
+
+@keyframes load {
+100%{ 
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg)
+}
+}

@@ -1,13 +1,17 @@
 let data;
 
 const updateElement = async () => {
+    document.querySelector('.loading').style.display = 'flex';
+    document.querySelector('.floating-image').style.display = 'none';
     const element = document.querySelector('.floating-image');
-    await fetch("http://localhost:4000/api").then(function(response) {
+    await fetch("https://generator.berekett.me/api").then(function(response) {
         return response.text();
       }).then(function(res) {
-        data = res
+        data = res;        
+        document.querySelector('.loading').style.display = 'none';
+        document.querySelector('.floating-image').style.display = 'flex';
+        element.src = 'https://generator.berekett.me/api';
       });
-    element.src = 'http://localhost:4000/api';
 }
 const downloadSVG = () => {    
     console.log('what', data)
