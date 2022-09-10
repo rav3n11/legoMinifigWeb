@@ -483,6 +483,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   cursor: pointer;
   color: #40403f;
 }
+.copy-icon{
+  opacity: 0.6;
+}
 .github-link{
   text-decoration: none;  
   opacity: 1;
@@ -518,4 +521,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	-ms-transform: rotate(360deg);
 	transform: rotate(360deg)
 }
+}
+.api-url{
+  cursor: pointer;
+}
+.copy-text{
+  display: none;
+  font-size: smaller;
+  opacity: 0.5;
+}
+.visible{
+  display: flex;
 }

@@ -20,3 +20,12 @@ const downloadSVG = () => {
     fakeLink.setAttribute('download', 'minifig.svg');
     fakeLink.click();  
   }
+const copyURL = () => {
+  var copyText = document.querySelector(".api-url");
+  console.log({copyText});
+  navigator.clipboard.writeText(copyText.innerHTML);
+  document.querySelector(".copy-text").classList.add("visible");
+  setTimeout(() => {
+    document.querySelector(".copy-text").classList.remove("visible");
+  }, 2000);
+}
