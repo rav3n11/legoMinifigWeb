@@ -5,5 +5,5 @@ A static website for the minifig api
 ![image](https://user-images.githubusercontent.com/49443576/189451099-add161b0-f038-457b-99b6-d67f444c6214.png)
 
 ## Functionality
-- introduces live api
+- introduces live api at [API](https://generator.berekett.me/api)
 - random minifig online + download
