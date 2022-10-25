@@ -38,3 +38,13 @@ const onScroll = () => {
 };
 
 window.addEventListener("scroll", onScroll);
+
+//hit the api once on pageload to mitigate coldstart delay
+//without updating the element
+//looking for a better solution
+
+fetch("https://generator.berekett.me/api").then(function(response) {
+  return response.text();
+}).then(function(res) {
+  data = res;
+});
